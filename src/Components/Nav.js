@@ -22,6 +22,7 @@ const NavbarContainer = styled.div`
 const MainTitle = styled.h1`
   font-size: 4vh;
   color: black;
+  margin-left: 5%;
   @media (max-width: 768px) {
     left: 0;
   }
@@ -58,6 +59,7 @@ const Dropdown = styled(motion.div)`
   display: ${(props) => (props.isOpen === true ? "flex" : "none")};
   margin-left: 5vh;
   position: absolute;
+  z-index: 1;
   ${(props) => (props.isOpen === true ? "flex-direction: column" : "")};
   @media (max-width: 768px) {
     width: 100%;
