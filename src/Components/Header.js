@@ -1,15 +1,18 @@
 import React from "react";
 import ControllerIMG from "../Assets/Images/controller.png";
 import styled from "styled-components";
+import { Content } from "./Content";
 
 const HorizonalAdvertisement = styled.div`
   background-color: #b8d8e7;
-  width: 100%;
+  min-width: 800px;
+  max-width: 1000px;
   height: 100px;
   align-items: center;
   display: flex;
   justify-content: center;
 `;
+
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -63,23 +66,23 @@ const BackgroundImage = styled.img`
     max-height: 1000px;
     filter: brightness(70%);
   }
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+
+  ${(props) =>
+    props.rotated === true
+      ? " -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: FlipH"
+      : ""};
 `;
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <BackgroundImage src={ControllerIMG} />
+      <BackgroundImage rotated={true} src={ControllerIMG} />
       <ContentWrapper>
         <HeaderMainText>Make new friends in your favorite game </HeaderMainText>
         <DiscoverButton> DISCOVER </DiscoverButton>
         <HorizonalAdvertisement> ADD </HorizonalAdvertisement>
       </ContentWrapper>
+      <Content></Content>
     </HeaderContainer>
   );
 };
