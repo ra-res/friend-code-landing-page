@@ -16,10 +16,12 @@ const VerticalAdvertisement = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50%;
   @media (max-width: 1000px) {
     min-width: 800px;
     max-width: 1000px;
     height: 100px;
+    margin-bottom: 0%;
   }
 `;
 
