@@ -1,4 +1,4 @@
-games = [
+const games = [
   {
     name: "Mario Kart Tour",
     text:
@@ -23,11 +23,6 @@ games = [
     name: "My Singing Monsters",
     text:
       "Swap your Singing Monsters friend code! Breed your Monsters to create charming new species. With so many singing Monsters to collect and more Monsters added all the time, you’ll never run out of quirky characters. Mix and match your favorite Singing Monsters to create unique musical melodies! Each Monster has its own unique sound, from booming percussion to cheerful vocals — you’ll be singing along before long!",
-  },
-  {
-    name: "Pokemon Go",
-    text:
-      "Pokémon Go is a freemium-type mobile video game based on massively multiplayer localization using augmented reality. The project is jointly created by The Pokémon Company and Niantic, responsible for the Ingress Augmented Reality mobile video game. The game has been available since July 2016 on the iOS and Android platforms. As with the video game series, the goal is to capture Pokémon.",
   },
   {
     name: "Pokémon Master EX",
@@ -55,3 +50,4 @@ games = [
       " In the region of Galar there is a vast natural area called 'Terres Sauvages' (Wild Lands). The Wild Lands connect the towns of Galar, and nature stretches as far as the eye can see.",
   },
 ];
+export default games;

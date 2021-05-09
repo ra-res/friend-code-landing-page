@@ -11,6 +11,10 @@ const HorizonalAdvertisement = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 100px;
+    width: 100%;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -18,6 +22,8 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   > * {
     margin-top: 5vh;
   }
@@ -39,14 +45,14 @@ const HeaderContainer = styled.div`
   position: relative;
   width: 100%;
   min-height: 1000px;
-  max-height: 1900px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 768px) {
     min-height: 400px;
-    max-height: 1000px;
+    max-height: 100%;
   }
 `;
 
