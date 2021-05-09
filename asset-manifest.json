@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/friend-code-landing-page/static/css/main.9cbc46bb.chunk.css",
+    "main.js": "/friend-code-landing-page/static/js/main.268b0b47.chunk.js",
+    "main.js.map": "/friend-code-landing-page/static/js/main.268b0b47.chunk.js.map",
+    "runtime-main.js": "/friend-code-landing-page/static/js/runtime-main.4f8d3e7b.js",
+    "runtime-main.js.map": "/friend-code-landing-page/static/js/runtime-main.4f8d3e7b.js.map",
+    "static/js/2.5e2a5ecd.chunk.js": "/friend-code-landing-page/static/js/2.5e2a5ecd.chunk.js",
+    "static/js/2.5e2a5ecd.chunk.js.map": "/friend-code-landing-page/static/js/2.5e2a5ecd.chunk.js.map",
+    "index.html": "/friend-code-landing-page/index.html",
+    "static/css/main.9cbc46bb.chunk.css.map": "/friend-code-landing-page/static/css/main.9cbc46bb.chunk.css.map",
+    "static/js/2.5e2a5ecd.chunk.js.LICENSE.txt": "/friend-code-landing-page/static/js/2.5e2a5ecd.chunk.js.LICENSE.txt",
+    "static/media/controller.8a841546.png": "/friend-code-landing-page/static/media/controller.8a841546.png",
+    "static/media/palmtree.2e3b0d88.jpeg": "/friend-code-landing-page/static/media/palmtree.2e3b0d88.jpeg",
+    "static/media/pokemon.c33936cf.png": "/friend-code-landing-page/static/media/pokemon.c33936cf.png",
+    "static/media/raceflag.4f598a04.svg": "/friend-code-landing-page/static/media/raceflag.4f598a04.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f8d3e7b.js",
+    "static/js/2.5e2a5ecd.chunk.js",
+    "static/css/main.9cbc46bb.chunk.css",
+    "static/js/main.268b0b47.chunk.js"
+  ]
+}
