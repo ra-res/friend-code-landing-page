@@ -43,6 +43,8 @@ const DiscoverButton = styled.h1`
 
 const HeaderContainer = styled.div`
   position: relative;
+  background-color: black;
+  z-index: -2;
   width: 100%;
   min-height: 1000px;
   max-height: 100%;
@@ -72,23 +74,23 @@ const BackgroundImage = styled.img`
     max-height: 1000px;
     filter: brightness(70%);
   }
-
   ${(props) =>
     props.rotated === true
-      ? " -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: FlipH"
-      : ""};
+      ? "-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: FlipH"
+      : "bottom:0;"};
 `;
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <BackgroundImage rotated={true} src={ControllerIMG} />
+      <BackgroundImage rotated={false} src={ControllerIMG} />
       <ContentWrapper>
         <HeaderMainText>Make new friends in your favorite game </HeaderMainText>
         <DiscoverButton> DISCOVER </DiscoverButton>
         <HorizonalAdvertisement> ADD </HorizonalAdvertisement>
       </ContentWrapper>
       <Content></Content>
+      <BackgroundImage rotated={true} src={ControllerIMG} />
     </HeaderContainer>
   );
 };
